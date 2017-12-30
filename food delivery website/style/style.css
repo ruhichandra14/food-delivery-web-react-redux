@@ -1,0 +1,139 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.main-header {
+    background-color: #C4C3C3;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 13px;
+}
+.img-petoo-logo{
+    width: 5%;
+    margin: 0 0 0 14px;
+    opacity: 1;
+}
+.display-food-images {
+    background-image: url(./food-images.jpg);
+    width: 100%;
+    height: 355px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#container{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.menu-container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #45474796;
+    width: 94%;
+    opacity: 0.9;
+    height: fit-content;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.menu-label{
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+input.search-menu {
+    width: 72%;
+    margin: 15px ;
+    padding: 8px;
+}
+
+li.menu-cuisine-item {
+    display: inline-block;
+    margin: 5%;
+    width: 300px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: crimson;
+}
+img.cuisine-image {
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    border: 2px solid #d2691e57;
+}
+
+body{
+    background-image: url(https://3.bp.blogspot.com/-V_yVhgaCrEI/UUa11hnUPdI/AAAAAAAAE9s/dxlTfXr1BU4/s1600/light-wood-pattern.jpg)
+}
+
+.error-info-container {
+    text-align: center;
+    margin: 20px;
+    color: #9acd32;
+    font-size: 22px;
+    font-weight: bold;
+}
+.geolocation-container {
+    display: inline-block;
+}
+
+.latitude-info,.longitude-info{
+    display: none !important;
+}
+
+button.search-location {
+    padding: 8px;
+    background-color: #22a23e;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+}
+
+table.jsonTable {
+    margin: 45px auto;
+    box-shadow: 5px 5px 5px #ff000057;
+}
+
+.table-heading{ 
+   text-align: center;
+    margin: 45px auto;
+}
+
+th.jsonColumn {
+    display: none;
+}
+
+tr.jsonRow.jsonEven {
+    background-color: gainsboro;
+    border-bottom: 1px solid #ff7f50;
+    color: #a52a2a;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    input.search-menu {
+        width: 52%;
+    }
+    img.cuisine-image {
+        width: 81%;
+        height: 157px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 450px) {
+   .menu-container {
+        width: 95%;
+    }
+    input.search-menu {
+        width: 32%;
+    }
+}

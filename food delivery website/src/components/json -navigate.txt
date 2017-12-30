@@ -1,0 +1,26 @@
+       let colHeading = [];
+            let menuList = this.state.menuData.menu.menu_items;
+
+            return(
+                <ul>
+            {(menuList).map((listItem) => { 
+                let filteredMenu = Object.keys(listItem).filter(itemDetails =>  itemDetails == "category_name" || itemDetails == "menu_item_name" || itemDetails == "is_veg" || itemDetails == "price")
+                 return(
+
+                (filteredMenu).map((item)=>{ 
+                    return  (
+                        <div>
+                        <li>{listItem[item]}</li>
+                        <table>
+                        <th>{itemDetails}</th>
+                        </table>
+                        </div>
+
+                    ) 
+                })
+                )
+
+
+            })}
+            </ul>
+            )
